@@ -31,6 +31,9 @@
 /** 标题下划线view */
 @property (nonatomic,strong) UIView * underLine;
 
+/** 是否初始化 */
+@property (nonatomic,assign) BOOL isInital;
+
 @end
 
 @implementation WZWTopRollController
@@ -46,11 +49,14 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
-    //设置所有标题宽度
-    [self setupTitleWidth];
-    
-    //设置所有标题
-    [self setupAllTitle];
+    if (_isInital == NO) {
+        _isInital = YES;
+        //设置所有标题宽度
+        [self setupTitleWidth];
+        
+        //设置所有标题
+        [self setupAllTitle];
+    }
 }
 
 
@@ -111,12 +117,6 @@
 
 //添加所有标题
 -(void)setupAllTitle{
-    
-    if (self.titleLabels.count>0) {
-        [self.titleLabels removeAllObjects];
-    }
-    
-    [self.titleScrollView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
     NSInteger count = self.childViewControllers.count;
     
