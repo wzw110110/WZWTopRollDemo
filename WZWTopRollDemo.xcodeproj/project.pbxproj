@@ -74,6 +74,15 @@
 		B370C7301D2604BF00B8756B /* TopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = B370C7291D2604BF00B8756B /* TopicController.m */; };
 		B370C7311D2604BF00B8756B /* VideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = B370C72C1D2604BF00B8756B /* VideoController.m */; };
 		B370C73A1D2606B000B8756B /* WZWTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B370C7391D2606B000B8756B /* WZWTabbarController.m */; };
+		B370C73E1D2607CC00B8756B /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = B370C73D1D2607CC00B8756B /* BaseController.m */; };
+		B370C7411D26080E00B8756B /* HeadlineController.m in Sources */ = {isa = PBXBuildFile; fileRef = B370C7401D26080E00B8756B /* HeadlineController.m */; };
+		B370C7441D26082100B8756B /* AmusementController.m in Sources */ = {isa = PBXBuildFile; fileRef = B370C7431D26082100B8756B /* AmusementController.m */; };
+		B370C7471D26083300B8756B /* HotpotController.m in Sources */ = {isa = PBXBuildFile; fileRef = B370C7461D26083300B8756B /* HotpotController.m */; };
+		B370C74A1D26085500B8756B /* SportController.m in Sources */ = {isa = PBXBuildFile; fileRef = B370C7491D26085500B8756B /* SportController.m */; };
+		B370C74D1D26086900B8756B /* LocalController.m in Sources */ = {isa = PBXBuildFile; fileRef = B370C74C1D26086900B8756B /* LocalController.m */; };
+		B370C7501D26087C00B8756B /* NetEaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = B370C74F1D26087C00B8756B /* NetEaseController.m */; };
+		B370C7531D26088F00B8756B /* FinanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B370C7521D26088F00B8756B /* FinanceController.m */; };
+		B370C7561D2608A100B8756B /* TechController.m in Sources */ = {isa = PBXBuildFile; fileRef = B370C7551D2608A100B8756B /* TechController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -219,6 +228,24 @@
 		B370C72C1D2604BF00B8756B /* VideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoController.m; sourceTree = "<group>"; };
 		B370C7381D2606B000B8756B /* WZWTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZWTabbarController.h; sourceTree = "<group>"; };
 		B370C7391D2606B000B8756B /* WZWTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZWTabbarController.m; sourceTree = "<group>"; };
+		B370C73C1D2607CC00B8756B /* BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
+		B370C73D1D2607CC00B8756B /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
+		B370C73F1D26080E00B8756B /* HeadlineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadlineController.h; sourceTree = "<group>"; };
+		B370C7401D26080E00B8756B /* HeadlineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadlineController.m; sourceTree = "<group>"; };
+		B370C7421D26082100B8756B /* AmusementController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmusementController.h; sourceTree = "<group>"; };
+		B370C7431D26082100B8756B /* AmusementController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmusementController.m; sourceTree = "<group>"; };
+		B370C7451D26083300B8756B /* HotpotController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotpotController.h; sourceTree = "<group>"; };
+		B370C7461D26083300B8756B /* HotpotController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotpotController.m; sourceTree = "<group>"; };
+		B370C7481D26085500B8756B /* SportController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SportController.h; sourceTree = "<group>"; };
+		B370C7491D26085500B8756B /* SportController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SportController.m; sourceTree = "<group>"; };
+		B370C74B1D26086900B8756B /* LocalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalController.h; sourceTree = "<group>"; };
+		B370C74C1D26086900B8756B /* LocalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalController.m; sourceTree = "<group>"; };
+		B370C74E1D26087C00B8756B /* NetEaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetEaseController.h; sourceTree = "<group>"; };
+		B370C74F1D26087C00B8756B /* NetEaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetEaseController.m; sourceTree = "<group>"; };
+		B370C7511D26088F00B8756B /* FinanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinanceController.h; sourceTree = "<group>"; };
+		B370C7521D26088F00B8756B /* FinanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinanceController.m; sourceTree = "<group>"; };
+		B370C7541D2608A100B8756B /* TechController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TechController.h; sourceTree = "<group>"; };
+		B370C7551D2608A100B8756B /* TechController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TechController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -503,6 +530,8 @@
 			children = (
 				B370C7381D2606B000B8756B /* WZWTabbarController.h */,
 				B370C7391D2606B000B8756B /* WZWTabbarController.m */,
+				B370C73C1D2607CC00B8756B /* BaseController.h */,
+				B370C73D1D2607CC00B8756B /* BaseController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -510,6 +539,7 @@
 		B370C71E1D2604BF00B8756B /* News */ = {
 			isa = PBXGroup;
 			children = (
+				B370C73B1D26078300B8756B /* Children */,
 				B370C71F1D2604BF00B8756B /* NewsController.h */,
 				B370C7201D2604BF00B8756B /* NewsController.m */,
 			);
@@ -552,6 +582,29 @@
 				B370C72C1D2604BF00B8756B /* VideoController.m */,
 			);
 			path = Video;
+			sourceTree = "<group>";
+		};
+		B370C73B1D26078300B8756B /* Children */ = {
+			isa = PBXGroup;
+			children = (
+				B370C73F1D26080E00B8756B /* HeadlineController.h */,
+				B370C7401D26080E00B8756B /* HeadlineController.m */,
+				B370C7421D26082100B8756B /* AmusementController.h */,
+				B370C7431D26082100B8756B /* AmusementController.m */,
+				B370C7451D26083300B8756B /* HotpotController.h */,
+				B370C7461D26083300B8756B /* HotpotController.m */,
+				B370C7481D26085500B8756B /* SportController.h */,
+				B370C7491D26085500B8756B /* SportController.m */,
+				B370C74B1D26086900B8756B /* LocalController.h */,
+				B370C74C1D26086900B8756B /* LocalController.m */,
+				B370C74E1D26087C00B8756B /* NetEaseController.h */,
+				B370C74F1D26087C00B8756B /* NetEaseController.m */,
+				B370C7511D26088F00B8756B /* FinanceController.h */,
+				B370C7521D26088F00B8756B /* FinanceController.m */,
+				B370C7541D2608A100B8756B /* TechController.h */,
+				B370C7551D2608A100B8756B /* TechController.m */,
+			);
+			path = Children;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -697,16 +750,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B370C74A1D26085500B8756B /* SportController.m in Sources */,
 				B370C7011D26037100B8756B /* UIView+WebCacheOperation.m in Sources */,
 				B370C6A81D26035900B8756B /* AFHTTPRequestOperation.m in Sources */,
 				B370C6CA1D26036700B8756B /* MJFoundation.m in Sources */,
 				B370C6B51D26035900B8756B /* UIImageView+AFNetworking.m in Sources */,
 				B370C73A1D2606B000B8756B /* WZWTabbarController.m in Sources */,
+				B370C7411D26080E00B8756B /* HeadlineController.m in Sources */,
 				B370C6511D26028C00B8756B /* ViewController.m in Sources */,
 				B370C6CC1D26036700B8756B /* MJType.m in Sources */,
 				B370C6A91D26035900B8756B /* AFHTTPRequestOperationManager.m in Sources */,
 				B370C6B61D26035900B8756B /* UIProgressView+AFNetworking.m in Sources */,
+				B370C7531D26088F00B8756B /* FinanceController.m in Sources */,
 				B370C6AB1D26035900B8756B /* AFNetworkReachabilityManager.m in Sources */,
+				B370C7441D26082100B8756B /* AmusementController.m in Sources */,
 				B370C6F81D26037100B8756B /* SDWebImageDownloaderOperation.m in Sources */,
 				B370C6FA1D26037100B8756B /* SDWebImagePrefetcher.m in Sources */,
 				B370C72E1D2604BF00B8756B /* ProfileController.m in Sources */,
@@ -726,6 +783,7 @@
 				B370C6CD1D26036700B8756B /* NSObject+MJCoding.m in Sources */,
 				B370C6B81D26035900B8756B /* UIWebView+AFNetworking.m in Sources */,
 				B370C6AA1D26035900B8756B /* AFHTTPSessionManager.m in Sources */,
+				B370C74D1D26086900B8756B /* LocalController.m in Sources */,
 				B370C6F41D26037100B8756B /* SDImageCache.m in Sources */,
 				B370C6B31D26035900B8756B /* UIAlertView+AFNetworking.m in Sources */,
 				B370C6F91D26037100B8756B /* SDWebImageManager.m in Sources */,
@@ -733,16 +791,20 @@
 				B370C6AE1D26035900B8756B /* AFURLRequestSerialization.m in Sources */,
 				B370C6C91D26036700B8756B /* MJConst.m in Sources */,
 				B370C6B11D26035900B8756B /* AFNetworkActivityIndicatorManager.m in Sources */,
+				B370C7561D2608A100B8756B /* TechController.m in Sources */,
+				B370C7471D26083300B8756B /* HotpotController.m in Sources */,
 				B370C6B01D26035900B8756B /* AFURLSessionManager.m in Sources */,
 				B370C7001D26037100B8756B /* UIImageView+WebCache.m in Sources */,
 				B370C6F71D26037100B8756B /* SDWebImageDownloader.m in Sources */,
 				B370C72F1D2604BF00B8756B /* ReadController.m in Sources */,
 				B370C7311D2604BF00B8756B /* VideoController.m in Sources */,
 				B370C64E1D26028C00B8756B /* AppDelegate.m in Sources */,
+				B370C7501D26087C00B8756B /* NetEaseController.m in Sources */,
 				B370C6F21D26037100B8756B /* MKAnnotationView+WebCache.m in Sources */,
 				B370C6CB1D26036700B8756B /* MJIvar.m in Sources */,
 				B370C6F61D26037100B8756B /* SDWebImageDecoder.m in Sources */,
 				B370C6F51D26037100B8756B /* SDWebImageCompat.m in Sources */,
+				B370C73E1D2607CC00B8756B /* BaseController.m in Sources */,
 				B370C6FF1D26037100B8756B /* UIImageView+HighlightedWebCache.m in Sources */,
 				B370C6F31D26037100B8756B /* NSData+ImageContentType.m in Sources */,
 				B370C64B1D26028C00B8756B /* main.m in Sources */,
