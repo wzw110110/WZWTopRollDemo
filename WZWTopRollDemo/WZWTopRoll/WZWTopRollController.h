@@ -10,7 +10,8 @@
 
 @interface WZWTopRollController : UIViewController
 
-//标题的属性设置
+
+/*************************标题的属性设置******************************/
 /** 标题滚动视图的背景颜色 */
 @property (nonatomic,strong) UIColor * titleScrollViewColor;
 
@@ -23,7 +24,8 @@
 /** 标题字体大小 */
 @property (nonatomic,strong) UIFont * titleFont;
 
-//标题下标的属性设置
+
+/*************************标题的下标属性设置******************************/
 /** 是否需要下标 */
 @property (nonatomic,assign) BOOL isShowUnderLine;
 
@@ -32,5 +34,13 @@
 
 /** 下标的高度 */
 @property (nonatomic,assign) CGFloat underLineH;
+
+
+/*************************字体缩放设置******************************/
+/** 字体是否缩放 */
+@property (nonatomic,assign) BOOL isShowTitleScale;
+
+/** 字体缩放比例 */
+@property (nonatomic,assign) CGFloat titleScale;
 
 @end

@@ -80,6 +80,7 @@
     if (!_underLine) {
         _underLine = [[UIView alloc]init];
         _underLine.backgroundColor = _underLineColor?_underLineColor:[UIColor redColor];
+        [self.titleScrollView addSubview:_underLine];
     }
     return _underLine;
 }
@@ -110,6 +111,12 @@
 
 //添加所有标题
 -(void)setupAllTitle{
+    
+    if (self.titleLabels.count>0) {
+        [self.titleLabels removeAllObjects];
+    }
+    
+    [self.titleScrollView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
     NSInteger count = self.childViewControllers.count;
     
@@ -164,14 +171,22 @@
     [self setupSelectedLabel:selectedLabel];
 }
 
-//设置选中标题的属性
+
+#pragma mark - 设置选中标题的属性
 -(void)setupSelectedLabel:(UILabel *)label{
     for (UILabel * tempLabel in self.titleLabels) {
         if (tempLabel == label) continue;
         tempLabel.textColor = _norColor?_norColor:[UIColor blackColor];
+        tempLabel.transform = CGAffineTransformIdentity;
     }
     //修改选中标题的颜色
     label.textColor = _selColor?_selColor:[UIColor redColor];
+    
+    //设置标题字体缩放
+    if (_isShowTitleScale) {
+        CGFloat scaleTransform = _titleScale?_titleScale:WZWTitleTransformScale;
+        label.transform = CGAffineTransformMakeScale(scaleTransform, scaleTransform);
+    }
     
     //设置标题居中
     [self setupTitleLabelCenter:label];
@@ -182,11 +197,12 @@
 
 //设置下标
 -(void)setupUnderLine:(UILabel *)label{
+    if (_isShowUnderLine == NO) return;
     //获取label大小
     CGSize labelSize = [label.text boundingRectWithSize:CGSizeMake(MAXFLOAT, 0) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:self.titleFont} context:nil].size;
     CGFloat underLineH = _underLineH?_underLineH:WZWUnderLineH;
     
-     __block CGRect frame = self.underLine.frame;
+    __block CGRect frame = self.underLine.frame;
     frame.origin.y = label.frame.size.height - underLineH;
     frame.size.height = underLineH;
     self.underLine.frame = frame;
@@ -280,28 +296,69 @@
 #pragma mark - UIScrollView代理方法
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
     CGFloat offsetX = scrollView.contentOffset.x;
-//    NSInteger offsetXInt = offsetX;
-//    NSInteger screenWInt = ScreenW;
-//    
-//    NSInteger temp = offsetXInt % screenWInt;
-//    
-//    NSLog(@"#######%ld",temp);
-//    
-//    if (temp > ScreenW * 0.5) {
-//        //往右边移动
-//        offsetX = offsetX + (ScreenW - temp);
-//        [self.contentCollectionView setContentOffset:CGPointMake(offsetX, 0) animated:YES];
-//    }else if (temp < ScreenW * 0.5 && temp > 0){
-//        //往左边移动
-//        offsetX = offsetX - temp;
-//        [self.contentCollectionView setContentOffset:CGPointMake(offsetX, 0) animated:YES];
-//    }
-    
     //获取对应的选中的标题
     NSInteger index = offsetX/ScreenW;
     [self setupSelectedLabel:self.titleLabels[index]];
 }
 
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    //获取偏移量
+    CGFloat offsetX = scrollView.contentOffset.x;
+    
+    //获取左边label
+    NSInteger leftIndex = offsetX / ScreenW;
+    UILabel * leftLabel = self.titleLabels[leftIndex];
+    
+    //获取右边label
+    NSInteger rightIndex = leftIndex + 1;
+    UILabel * rightLabel = nil;
+    if (rightIndex < self.titleLabels.count) {
+        rightLabel = self.titleLabels[rightIndex];
+    }
+    
+    //字体缩放
+    [self setupTitleScaleWithOffset:offsetX leftLabel:leftLabel rightLabel:rightLabel];
+    
+    //下标偏移
+    [self setupUnderLineWithOffset:offsetX leftLabel:leftLabel rightLabel:rightLabel];
+    
+    //记录上一次的偏移量
+    _lastOffsetX = offsetX;
+}
 
+#pragma mark - 设置字体、下标按滚动视图滑动的比例缩放
+//字体缩放
+-(void)setupTitleScaleWithOffset:(CGFloat)offsetX leftLabel:(UILabel *)leftLabel rightLabel:(UILabel *)rightLabel{
+    if (_isShowTitleScale == NO) return;
+    //获取右边的缩放
+    CGFloat rightScale = offsetX /ScreenW - leftLabel.tag;
+    CGFloat leftScale = 1 - rightScale;
+    CGFloat scaleTransform = _titleScale?_titleScale:WZWTitleTransformScale;
+    scaleTransform -=1;
+    leftLabel.transform = CGAffineTransformMakeScale(leftScale * scaleTransform + 1, leftScale * scaleTransform + 1);
+    rightLabel.transform = CGAffineTransformMakeScale(rightScale * scaleTransform + 1, rightScale * scaleTransform + 1);
+}
+
+//下标偏移
+-(void)setupUnderLineWithOffset:(CGFloat)offsetX leftLabel:(UILabel *)leftLabel rightLabel:(UILabel *)rightLabe{
+    if (_isShowUnderLine == NO) return;
+    
+    //获取两个标题中心点的距离
+    CGFloat centerRange = rightLabe.center.x - leftLabel.center.x;
+    //标题宽度差值
+    CGSize leftSize = [leftLabel.text boundingRectWithSize:CGSizeMake(MAXFLOAT, 0) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:self.titleFont} context:nil].size;
+    CGSize rightSize = [rightLabe.text boundingRectWithSize:CGSizeMake(MAXFLOAT, 0) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:self.titleFont} context:nil].size;
+    CGFloat widthRange = rightSize.width - leftSize.width;
+    //获取移动距离
+    CGFloat offsetRange = offsetX - _lastOffsetX;
+    //计算当前下划线的偏移量
+    CGFloat underLineTransformX = offsetRange * centerRange /ScreenW;
+    CGFloat underLineWidth = offsetRange * widthRange / ScreenW;
+    
+    CGRect frame = self.underLine.frame;
+    frame.size.width += underLineWidth;
+    frame.origin.x += underLineTransformX;
+    self.underLine.frame = frame;
+}
 
 @end

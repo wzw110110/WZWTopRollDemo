@@ -27,7 +27,8 @@
     
     [self addAllChildControllers];
     
-    self.isShowUnderLine = YES;
+//    self.isShowUnderLine = YES;
+//    self.isShowTitleScale = YES;
     
 }
 
