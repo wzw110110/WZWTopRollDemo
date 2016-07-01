@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B370C64B1D26028C00B8756B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B370C64A1D26028C00B8756B /* main.m */; };
+		B370C64E1D26028C00B8756B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B370C64D1D26028C00B8756B /* AppDelegate.m */; };
+		B370C6511D26028C00B8756B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B370C6501D26028C00B8756B /* ViewController.m */; };
+		B370C6541D26028C00B8756B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B370C6521D26028C00B8756B /* Main.storyboard */; };
+		B370C6561D26028C00B8756B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B370C6551D26028C00B8756B /* Assets.xcassets */; };
+		B370C6591D26028C00B8756B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B370C6571D26028C00B8756B /* LaunchScreen.storyboard */; };
+		B370C6641D26028C00B8756B /* WZWTopRollDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B370C6631D26028C00B8756B /* WZWTopRollDemoTests.m */; };
+		B370C66F1D26028C00B8756B /* WZWTopRollDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B370C66E1D26028C00B8756B /* WZWTopRollDemoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B370C6601D26028C00B8756B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B370C63E1D26028B00B8756B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B370C6451D26028B00B8756B;
+			remoteInfo = WZWTopRollDemo;
+		};
+		B370C66B1D26028C00B8756B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B370C63E1D26028B00B8756B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B370C6451D26028B00B8756B;
+			remoteInfo = WZWTopRollDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B370C6461D26028B00B8756B /* WZWTopRollDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WZWTopRollDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B370C64A1D26028C00B8756B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B370C64C1D26028C00B8756B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B370C64D1D26028C00B8756B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B370C64F1D26028C00B8756B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B370C6501D26028C00B8756B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B370C6531D26028C00B8756B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B370C6551D26028C00B8756B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B370C6581D26028C00B8756B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B370C65A1D26028C00B8756B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B370C65F1D26028C00B8756B /* WZWTopRollDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WZWTopRollDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B370C6631D26028C00B8756B /* WZWTopRollDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZWTopRollDemoTests.m; sourceTree = "<group>"; };
+		B370C6651D26028C00B8756B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B370C66A1D26028C00B8756B /* WZWTopRollDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WZWTopRollDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B370C66E1D26028C00B8756B /* WZWTopRollDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZWTopRollDemoUITests.m; sourceTree = "<group>"; };
+		B370C6701D26028C00B8756B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B370C6431D26028B00B8756B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B370C65C1D26028C00B8756B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B370C6671D26028C00B8756B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B370C63D1D26028B00B8756B = {
+			isa = PBXGroup;
+			children = (
+				B370C6481D26028B00B8756B /* WZWTopRollDemo */,
+				B370C6621D26028C00B8756B /* WZWTopRollDemoTests */,
+				B370C66D1D26028C00B8756B /* WZWTopRollDemoUITests */,
+				B370C6471D26028B00B8756B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B370C6471D26028B00B8756B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B370C6461D26028B00B8756B /* WZWTopRollDemo.app */,
+				B370C65F1D26028C00B8756B /* WZWTopRollDemoTests.xctest */,
+				B370C66A1D26028C00B8756B /* WZWTopRollDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B370C6481D26028B00B8756B /* WZWTopRollDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B370C64C1D26028C00B8756B /* AppDelegate.h */,
+				B370C64D1D26028C00B8756B /* AppDelegate.m */,
+				B370C64F1D26028C00B8756B /* ViewController.h */,
+				B370C6501D26028C00B8756B /* ViewController.m */,
+				B370C6521D26028C00B8756B /* Main.storyboard */,
+				B370C6551D26028C00B8756B /* Assets.xcassets */,
+				B370C6571D26028C00B8756B /* LaunchScreen.storyboard */,
+				B370C65A1D26028C00B8756B /* Info.plist */,
+				B370C6491D26028C00B8756B /* Supporting Files */,
+			);
+			path = WZWTopRollDemo;
+			sourceTree = "<group>";
+		};
+		B370C6491D26028C00B8756B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B370C64A1D26028C00B8756B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B370C6621D26028C00B8756B /* WZWTopRollDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				B370C6631D26028C00B8756B /* WZWTopRollDemoTests.m */,
+				B370C6651D26028C00B8756B /* Info.plist */,
+			);
+			path = WZWTopRollDemoTests;
+			sourceTree = "<group>";
+		};
+		B370C66D1D26028C00B8756B /* WZWTopRollDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B370C66E1D26028C00B8756B /* WZWTopRollDemoUITests.m */,
+				B370C6701D26028C00B8756B /* Info.plist */,
+			);
+			path = WZWTopRollDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B370C6451D26028B00B8756B /* WZWTopRollDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B370C6731D26028C00B8756B /* Build configuration list for PBXNativeTarget "WZWTopRollDemo" */;
+			buildPhases = (
+				B370C6421D26028B00B8756B /* Sources */,
+				B370C6431D26028B00B8756B /* Frameworks */,
+				B370C6441D26028B00B8756B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WZWTopRollDemo;
+			productName = WZWTopRollDemo;
+			productReference = B370C6461D26028B00B8756B /* WZWTopRollDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B370C65E1D26028C00B8756B /* WZWTopRollDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B370C6761D26028C00B8756B /* Build configuration list for PBXNativeTarget "WZWTopRollDemoTests" */;
+			buildPhases = (
+				B370C65B1D26028C00B8756B /* Sources */,
+				B370C65C1D26028C00B8756B /* Frameworks */,
+				B370C65D1D26028C00B8756B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B370C6611D26028C00B8756B /* PBXTargetDependency */,
+			);
+			name = WZWTopRollDemoTests;
+			productName = WZWTopRollDemoTests;
+			productReference = B370C65F1D26028C00B8756B /* WZWTopRollDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B370C6691D26028C00B8756B /* WZWTopRollDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B370C6791D26028C00B8756B /* Build configuration list for PBXNativeTarget "WZWTopRollDemoUITests" */;
+			buildPhases = (
+				B370C6661D26028C00B8756B /* Sources */,
+				B370C6671D26028C00B8756B /* Frameworks */,
+				B370C6681D26028C00B8756B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B370C66C1D26028C00B8756B /* PBXTargetDependency */,
+			);
+			name = WZWTopRollDemoUITests;
+			productName = WZWTopRollDemoUITests;
+			productReference = B370C66A1D26028C00B8756B /* WZWTopRollDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B370C63E1D26028B00B8756B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = wzw;
+				TargetAttributes = {
+					B370C6451D26028B00B8756B = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					B370C65E1D26028C00B8756B = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = B370C6451D26028B00B8756B;
+					};
+					B370C6691D26028C00B8756B = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = B370C6451D26028B00B8756B;
+					};
+				};
+			};
+			buildConfigurationList = B370C6411D26028B00B8756B /* Build configuration list for PBXProject "WZWTopRollDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B370C63D1D26028B00B8756B;
+			productRefGroup = B370C6471D26028B00B8756B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B370C6451D26028B00B8756B /* WZWTopRollDemo */,
+				B370C65E1D26028C00B8756B /* WZWTopRollDemoTests */,
+				B370C6691D26028C00B8756B /* WZWTopRollDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B370C6441D26028B00B8756B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B370C6591D26028C00B8756B /* LaunchScreen.storyboard in Resources */,
+				B370C6561D26028C00B8756B /* Assets.xcassets in Resources */,
+				B370C6541D26028C00B8756B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B370C65D1D26028C00B8756B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B370C6681D26028C00B8756B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B370C6421D26028B00B8756B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B370C6511D26028C00B8756B /* ViewController.m in Sources */,
+				B370C64E1D26028C00B8756B /* AppDelegate.m in Sources */,
+				B370C64B1D26028C00B8756B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B370C65B1D26028C00B8756B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B370C6641D26028C00B8756B /* WZWTopRollDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B370C6661D26028C00B8756B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B370C66F1D26028C00B8756B /* WZWTopRollDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B370C6611D26028C00B8756B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B370C6451D26028B00B8756B /* WZWTopRollDemo */;
+			targetProxy = B370C6601D26028C00B8756B /* PBXContainerItemProxy */;
+		};
+		B370C66C1D26028C00B8756B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B370C6451D26028B00B8756B /* WZWTopRollDemo */;
+			targetProxy = B370C66B1D26028C00B8756B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B370C6521D26028C00B8756B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B370C6531D26028C00B8756B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B370C6571D26028C00B8756B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B370C6581D26028C00B8756B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B370C6711D26028C00B8756B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B370C6721D26028C00B8756B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B370C6741D26028C00B8756B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WZWTopRollDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PuSai.WZWTopRollDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B370C6751D26028C00B8756B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WZWTopRollDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PuSai.WZWTopRollDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B370C6771D26028C00B8756B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WZWTopRollDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PuSai.WZWTopRollDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WZWTopRollDemo.app/WZWTopRollDemo";
+			};
+			name = Debug;
+		};
+		B370C6781D26028C00B8756B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WZWTopRollDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PuSai.WZWTopRollDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WZWTopRollDemo.app/WZWTopRollDemo";
+			};
+			name = Release;
+		};
+		B370C67A1D26028C00B8756B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WZWTopRollDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PuSai.WZWTopRollDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WZWTopRollDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B370C67B1D26028C00B8756B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WZWTopRollDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PuSai.WZWTopRollDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WZWTopRollDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B370C6411D26028B00B8756B /* Build configuration list for PBXProject "WZWTopRollDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B370C6711D26028C00B8756B /* Debug */,
+				B370C6721D26028C00B8756B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B370C6731D26028C00B8756B /* Build configuration list for PBXNativeTarget "WZWTopRollDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B370C6741D26028C00B8756B /* Debug */,
+				B370C6751D26028C00B8756B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B370C6761D26028C00B8756B /* Build configuration list for PBXNativeTarget "WZWTopRollDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B370C6771D26028C00B8756B /* Debug */,
+				B370C6781D26028C00B8756B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B370C6791D26028C00B8756B /* Build configuration list for PBXNativeTarget "WZWTopRollDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B370C67A1D26028C00B8756B /* Debug */,
+				B370C67B1D26028C00B8756B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B370C63E1D26028B00B8756B /* Project object */;
+}
