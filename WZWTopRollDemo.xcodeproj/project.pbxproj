@@ -83,6 +83,7 @@
 		B370C7501D26087C00B8756B /* NetEaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = B370C74F1D26087C00B8756B /* NetEaseController.m */; };
 		B370C7531D26088F00B8756B /* FinanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B370C7521D26088F00B8756B /* FinanceController.m */; };
 		B370C7561D2608A100B8756B /* TechController.m in Sources */ = {isa = PBXBuildFile; fileRef = B370C7551D2608A100B8756B /* TechController.m */; };
+		B370C7591D260B8F00B8756B /* WZWTopRollController.m in Sources */ = {isa = PBXBuildFile; fileRef = B370C7581D260B8F00B8756B /* WZWTopRollController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -246,6 +247,9 @@
 		B370C7521D26088F00B8756B /* FinanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinanceController.m; sourceTree = "<group>"; };
 		B370C7541D2608A100B8756B /* TechController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TechController.h; sourceTree = "<group>"; };
 		B370C7551D2608A100B8756B /* TechController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TechController.m; sourceTree = "<group>"; };
+		B370C7571D260B8F00B8756B /* WZWTopRollController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZWTopRollController.h; sourceTree = "<group>"; };
+		B370C7581D260B8F00B8756B /* WZWTopRollController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZWTopRollController.m; sourceTree = "<group>"; };
+		B370C75A1D260CA000B8756B /* WZWHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZWHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -342,6 +346,9 @@
 		B370C67C1D2602C500B8756B /* WZWTopRoll */ = {
 			isa = PBXGroup;
 			children = (
+				B370C7571D260B8F00B8756B /* WZWTopRollController.h */,
+				B370C7581D260B8F00B8756B /* WZWTopRollController.m */,
+				B370C75A1D260CA000B8756B /* WZWHeader.h */,
 			);
 			path = WZWTopRoll;
 			sourceTree = "<group>";
@@ -772,6 +779,7 @@
 				B370C6AD1D26035900B8756B /* AFURLConnectionOperation.m in Sources */,
 				B370C6CE1D26036700B8756B /* NSObject+MJIvar.m in Sources */,
 				B370C6FD1D26037100B8756B /* UIImage+MultiFormat.m in Sources */,
+				B370C7591D260B8F00B8756B /* WZWTopRollController.m in Sources */,
 				B370C6B41D26035900B8756B /* UIButton+AFNetworking.m in Sources */,
 				B370C6B21D26035900B8756B /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				B370C6FB1D26037100B8756B /* UIButton+WebCache.m in Sources */,

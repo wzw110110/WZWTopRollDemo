@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WZWTopRollController.h"
 
-@interface NewsController : UIViewController
+@interface NewsController : WZWTopRollController
 
 @end
