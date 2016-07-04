@@ -7,8 +7,10 @@
 //
 
 #import "BaseController.h"
+#import "WZWHeader.h"
 
-@interface BaseController ()
+@interface BaseController () <UITableViewDataSource,UITableViewDelegate>
+
 
 @end
 
@@ -16,22 +18,45 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self initView];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - 初始化界面
+-(void)initView{
+    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, NavBarH + WZWTitleScrollH, ScreenW, ScreenH-NavBarH-WZWTitleScrollH-49) style:UITableViewStylePlain];
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+    [_tableView registerNib:[UINib nibWithNibName:@"NewsCell" bundle:nil] forCellReuseIdentifier:@"wzw"];
+    [self.view addSubview:_tableView];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - 表格视图代理方法
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.dataArray.count;
 }
-*/
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    NewsCell * cell = [tableView dequeueReusableCellWithIdentifier:@"wzw"];
+    cell.newsModel = self.dataArray[indexPath.row];
+    
+    
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 120;
+}
+
+#pragma mark - 懒加载
+-(NSMutableArray *)dataArray{
+    if (!_dataArray) {
+        _dataArray = [NSMutableArray array];
+    }
+    return _dataArray;
+}
+
+
 
 @end

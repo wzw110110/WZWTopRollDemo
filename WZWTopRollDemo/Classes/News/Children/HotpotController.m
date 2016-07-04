@@ -16,22 +16,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    //加载数据
+    [self loadData];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - 加载数据
+-(void)loadData{
+    
+    if (self.dataArray.count > 0) {
+        [self.dataArray removeAllObjects];
+    }
+    
+    NSString * url = @"http://c.m.163.com/nc/article/list/T1348650593803/0-20.html";
+    self.manager = [AFHTTPRequestOperationManager manager];
+    [self.manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSArray * arr = [NewsModel mj_objectArrayWithKeyValuesArray:responseObject[@"T1348650593803"]];
+        [self.dataArray addObjectsFromArray:arr];
+        [self.tableView reloadData];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"%@",error);
+    }];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AFHTTPRequestOperationManager.h"
+#import "MJExtension.h"
+#import "NewsCell.h"
+#import "NewsModel.h"
 
 @interface BaseController : UIViewController
+
+@property (nonatomic,strong) NSMutableArray * dataArray;
+@property (nonatomic,strong) AFHTTPRequestOperationManager * manager;
+@property (nonatomic,strong) UITableView * tableView;
 
 @end

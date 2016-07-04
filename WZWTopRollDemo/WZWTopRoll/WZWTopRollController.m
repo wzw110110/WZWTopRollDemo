@@ -44,6 +44,7 @@
     //初始化视图
     [self initView];
     
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -179,6 +180,7 @@
         tempLabel.textColor = _norColor?_norColor:[UIColor blackColor];
         tempLabel.transform = CGAffineTransformIdentity;
     }
+    
     //修改选中标题的颜色
     label.textColor = _selColor?_selColor:[UIColor redColor];
     
@@ -198,6 +200,7 @@
 //设置下标
 -(void)setupUnderLine:(UILabel *)label{
     if (_isShowUnderLine == NO) return;
+    
     //获取label大小
     CGSize labelSize = [label.text boundingRectWithSize:CGSizeMake(MAXFLOAT, 0) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:self.titleFont} context:nil].size;
     CGFloat underLineH = _underLineH?_underLineH:WZWUnderLineH;
@@ -225,6 +228,7 @@
 
 //设置选中的label居中
 -(void)setupTitleLabelCenter:(UILabel *)label{
+    
     //设置标题滚动区域的偏移量
     CGFloat offsetX = label.center.x - ScreenW * 0.5;
     if (offsetX < 0) {
@@ -249,6 +253,7 @@
 -(void)initView{
     
     self.automaticallyAdjustsScrollViewInsets = NO;
+    self.isShowTitleScale = YES;
     
     //设置contentView
     _contentView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenW, ScreenH)];
@@ -330,6 +335,7 @@
 //字体缩放
 -(void)setupTitleScaleWithOffset:(CGFloat)offsetX leftLabel:(UILabel *)leftLabel rightLabel:(UILabel *)rightLabel{
     if (_isShowTitleScale == NO) return;
+    
     //获取右边的缩放
     CGFloat rightScale = offsetX /ScreenW - leftLabel.tag;
     CGFloat leftScale = 1 - rightScale;

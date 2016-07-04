@@ -27,13 +27,15 @@
     
     [self addAllChildControllers];
     
-//    self.isShowUnderLine = YES;
-//    self.isShowTitleScale = YES;
+    self.isShowUnderLine = YES;
+    self.isShowTitleScale = NO;
+    
     
 }
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+
 }
 
 #pragma mark - 添加所有的子视图控制器
